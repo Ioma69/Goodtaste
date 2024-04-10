@@ -5,6 +5,13 @@
 # https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
 parameters:
 
+    _DB_NAME_: "%env(_DB_NAME_)%"
+    _DB_USER_: "%env(_DB_USER_)%"
+    _DB_IP_: "%env(_DB_IP_)%"
+    _DB_PORT_: "%env(_DB_PORT_)%"
+    _DB_PASSWORD_: "%env(_DB_PASSWORD_)%"
+    _APP_SECRET_: "%env(_APP_SECRET_)%"
+
 services:
     # default configuration for services in *this* file
     _defaults:
